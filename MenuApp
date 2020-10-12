@@ -1,42 +1,87 @@
 	public static void main(String[] args) {
 		
-		Scanner scanner = new Scanner(System.in);
-		
-		int cont = -1;
-		
-		do { 
-			System.out.println("1. File \n2. Edit \n3. Save \n4. Delete \n5. Exit \nSelect Option :");
-			int key = scanner.nextInt();
-			
-			switch (key) {
-			case 1: {
-				System.out.println("File Selected");
-				break;
-			}
-			case 2: {
-				System.out.println("File ready to be edited");
-				break;
-			}
-			case 3: {
-				System.out.println("File Saved");
-				break;
-			}
-			case 4 : {
-				System.out.println("File Deleted");
-				break;
-			}
-			case 5 : {
-				System.out.println("Exiting Program");
-				cont = 1;
-				break;
-			}
-			default:
-				System.out.println("Invalid Value");
-			}
-			
-		} while (cont != 1); 
-		scanner.close();
+		// vars
 
-	}
+	 int userOption;
+
+	 Scanner scanner = new Scanner(System.in);
+
+
+
+	do {​​
+
+	 // show the menu on screen
+
+	 System.out.println("Menu .....");
+
+	 System.out.println("1. File");
+
+	 System.out.println("2. Edit");
+
+	 System.out.println("3. Delete");
+
+	 System.out.println("4. Quit");
+
+
+
+	// prompt user for option
+
+	 System.out.println("Enter option ...");
+
+
+
+	// get the user's option
+
+	 userOption = scanner.nextInt();
+
+
+
+	// process the option
+
+	 switch (userOption) {​​
+
+	 case 1:
+
+	 System.out.println("Filing...");
+
+	 break;
+
+	 case 2:
+
+	 System.out.println("Editing...");
+
+	 break;
+
+	 case 3:
+
+	 System.out.println("Deleting...");
+
+	 break;
+
+	 case 4:
+
+	 System.out.println("Quit...");
+
+	 break;
+
+	 default:
+
+	 System.out.println("Not an option. Try again");
+	 }}​​
+
+ while (userOption != 4); // repeat the menu options.. depending on option
+
+
+
+
+
+	// program end
+
+	 System.out.println("Bye thanks for using the system");
+
+
+	 // close resources
+
+	 scanner.close();
 }
 
