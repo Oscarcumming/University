@@ -1,6 +1,6 @@
 	public static void main(String[] args) {
 		
-		// vars
+	// vars
 
 	 int userOption;
 
@@ -67,7 +67,8 @@
 	 default:
 
 	 System.out.println("Not an option. Try again");
-	 }}​​
+	 }
+	 }
 
  while (userOption != 4); // repeat the menu options.. depending on option
 
