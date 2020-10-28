@@ -9,6 +9,7 @@ package readingWeekChallenges;
  */
 public class ReadingWeekChallenge1NameToAscii {
 
+
 	/**
 	 * @Instructions 1. Code a String e.g. String name = "Aidan McGowan" to the
 	 *               ASCII value for each character i.e. [65, 105, 100, 97, 110, 32,
