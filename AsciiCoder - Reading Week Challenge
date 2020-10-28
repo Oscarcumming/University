@@ -1,0 +1,58 @@
+/**
+ * 
+ */
+package readingWeekChallenges;
+
+/**
+ * @author oscar
+ *
+ */
+public class ReadingWeekChallenge1NameToAscii {
+
+	/**
+	 * @Instructions 1. Code a String e.g. String name = "Aidan McGowan" to the
+	 *               ASCII value for each character i.e. [65, 105, 100, 97, 110, 32,
+	 *               77, 99, 71, 111, 119, 97, 110]
+	 * 
+	 *               2. Create a method to decode an ASCII based char array to a
+	 *               readable string ... i.e. [65, 105, 100, 97, 110, 32, 77, 99,
+	 *               71, 111, 119, 97, 110] to "Aidan McGowan"
+	 */
+   
+	public static void main(String[] args) {
+
+		// assign String reference
+		String name = "Aidan McGowan";
+
+		//invoke ascii coder method
+		asciiCoder(name);
+
+		// declare an array of chars
+		char[] nameChars = { 65, 105, 100, 97, 110, 32, 77, 99, 71, 111, 119, 97, 110 };
+		
+		//invoke ascii decoder method
+		asciiArrayDecoder(nameChars);
+
+	
+
+	}
+	
+	public static void asciiCoder (String name) {
+		
+		// run a loop to express values . cast to int to get ASCII Values.
+		for (int i = 0; i < name.length(); i++) {
+			System.out.println((int) name.charAt(i));
+			
+		}
+		
+	}
+	
+	public static void asciiArrayDecoder (char[] array) {
+		
+		// run a for loop to take array and transform into characters
+		for (int i = 0; i < array.length; i++) {
+			System.out.print(array[i]);
+		}
+	}
+
+}
