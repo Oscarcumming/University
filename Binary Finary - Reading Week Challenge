@@ -1,0 +1,54 @@
+/**
+ * 
+ */
+package readingWeekChallenges;
+
+import java.util.Arrays;
+
+/**
+ * @author oscar
+ *
+ */
+public class ReadingWeekChallenge4BinaryFinary {
+
+	/**
+	 * @Instructions Given the following array that represents an 8 bit (non signed)
+	 *               binary number
+	 * 
+	 *               boolean[] eightBitArray = { true, false, false, true, false,
+	 *               true, false, true };
+	 * 
+	 *               write a method that will output the array as a 0 or 1 based
+	 *               number representation; where true =1 and false = 0 i.e.
+	 * 
+	 *               1 0 0 1 0 1 0 1
+	 */
+	public static void main(String[] args) {
+
+		// initialising array
+		boolean[] eightBitArray = { true, false, false, true, false, true, false, true };
+
+		// invoking converter method
+		binaryConverter(eightBitArray);
+	}
+
+	public static void binaryConverter(boolean[] array) {
+
+		// array to store the 1s and 0s initialised
+		int[] binaryArray = new int[array.length];
+
+		// for loop that turns true/false into 1s and 0s in binaryArray
+		for (int i = 0; i < array.length; i++) {
+
+			if (array[i] == false) {
+				binaryArray[i] = 0;
+			} else {
+				binaryArray[i] = 1;
+			}
+
+		}
+
+		// prints out binary results
+		System.out.println(Arrays.toString(binaryArray));
+	}
+}
